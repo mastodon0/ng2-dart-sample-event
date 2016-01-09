@@ -1,0 +1,5 @@
+<div>
+    <div *ngIf="tripleClickTime == null">Click the bear 3 times</div>
+    <div *ngIf="tripleClickTime != null">You did the triple click in {{tripleClickTime}}ms</div>
+    <bear-component (tripleClick)="onTripleClick($event)"></bear-component>
+</div>
